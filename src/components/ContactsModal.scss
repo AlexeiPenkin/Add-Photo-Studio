@@ -1,0 +1,104 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+
+    .nav-modal {
+        position: relative;
+        width: 32.25rem; /* 516px */
+        height: 450px;
+        color: #fff;
+        transition: width 1s, height 350ms ease;
+        border-radius: 0.9375rem; /* 15px */
+        background-image: url('../../src/img/slider-img-3.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.25);
+            border-radius: 0.9375rem; /* 15px */
+            box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.35);
+            }
+
+        .nav-modal__content {
+            position: relative;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            border-radius: 0.9375rem; /* 15px */
+            z-index: 100;
+
+            .closeModal {
+                position: absolute;
+                top: -2rem;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 1.3125rem; /* 21px */
+                height: 1.3125rem; /* 21px */
+                font-size: 1.5625rem; /* 25px */
+                color: rgba(0, 0, 0, 0.5);
+                padding-bottom: 0.1875rem; /* 3px */
+                cursor: pointer;
+                z-index: 10;
+                transition: all .2s ease-in-out;
+    
+                &:hover {
+                    color: rgba(0, 0, 0, 0.3);
+                }
+    
+                &:active {
+                    color: #E97522;
+                }
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                padding: 40px;
+
+                h2 {
+                    // color: rgba(0, 0, 0, 0.9);
+                    font-size: 2rem;
+                    font-weight: 600;
+                    line-height: 120%;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    
+                    strong {
+                        // color: rgba(0, 0, 0, 0.9);
+                        font-size: 18px;
+                        font-weight: 600;
+                        text-decoration: underline;
+                    }
+                }
+
+                .info__address,
+                .info__email,
+                .info__tel {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

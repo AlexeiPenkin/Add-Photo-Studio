@@ -1,0 +1,120 @@
+:root {
+    --primary: #E97522;
+    --white: #ffffff;
+    --gray: #B1B1B1;
+}
+
+::-webkit-scrollbar {
+    width: 1.3rem;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #797979;
+    transition: all 0.5s ease-in-out;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #222224;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f9f9f9;
+}
+  
+body {
+    font-size: 1.6rem;
+}
+  
+.container {
+    max-width: 88rem;
+    padding: 0;
+    margin: 0 auto;
+}
+  
+.swiper_container {
+    height: 38rem;
+    padding: 0;
+    position: relative;
+}
+  
+.swiper-slide {
+    width: 37rem;
+    height: 42rem;
+    position: relative;
+}
+  
+// @media (max-width: 500px) {
+//     .swiper_container {
+//       height: 47rem;
+//     }
+//     .swiper-slide {
+//       width: 28rem !important;
+//       height: 36rem !important;
+//     }
+//     .swiper-slide img {
+//       width: 28rem !important;
+//       height: 36rem !important;
+//     }
+// }
+  
+.swiper-slide img {
+    width: 37rem;
+    object-fit: cover;
+}
+  
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none;
+}
+  
+.slider-controler {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 820px;
+    height: 73px;
+    margin: 0 auto;
+}
+  
+.slider-controler .swiper-button-next {
+    transform: translateY(21rem);
+}
+  
+//   @media (max-width: 990px) {
+//     .slider-controler .swiper-button-next {
+//       left: 70% !important;
+//       transform: translateX(-70%) !important;
+//     }
+//   }
+  
+//   @media (max-width: 450px) {
+//     .slider-controler .swiper-button-next {
+//       left: 80% !important;
+//       transform: translateX(-80%) !important;
+//     }
+//   }
+  
+//   @media (max-width: 990px) {
+//     .slider-controler .swiper-button-prev {
+//       left: 30% !important;
+//       transform: translateX(-30%) !important;
+//     }
+//   }
+  
+//   @media (max-width: 450px) {
+//     .slider-controler .swiper-button-prev {
+//       left: 20% !important;
+//       transform: translateX(-20%) !important;
+//     }
+//   }
+  
+.slider-controler .slider-arrow {
+    background: var(--white);
+    color: var(--primary);
+    width: 4.6rem;
+    height: 4.6rem;
+    border-radius: 50%;
+    bottom: 100%;
+    transform: translateY(-21rem);
+}

@@ -1,0 +1,130 @@
+.gift-card {
+    background-image: url('../../public/img/gift-card-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 1px dotted #fff;
+
+    .gift-card__heading {
+        width: 100%;
+        color: #333;
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 120%;
+        text-align: center;
+        margin: 5.125rem auto 12rem;
+    }
+
+    .gift-card__wrap {
+        display: flex;
+        margin: 0 17.5rem 8.125rem 13.75rem;
+
+        .gift-card__info {
+            display: flex;
+            flex-direction: column;
+            width: 35.44rem;
+
+            span {
+                color: #C1C1C1;
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 120%;
+                letter-spacing: 0.0625rem;
+                margin-bottom: 0.5rem;
+            }
+
+            h2 {
+                color: #4A4A4A;
+                font-size: 3rem;
+                font-weight: 600;
+                line-height: 140%;
+                letter-spacing: 0.0625rem;
+                margin-bottom: 3.25rem;
+            }
+
+            .gift-card__options {
+                display: flex;
+                flex-direction: column;
+
+                .gift-card__option {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    margin-bottom: 1.5rem;
+
+                    img {
+                        width: 1.125rem;
+                        height: 1.125rem;
+                    }
+
+                    span {
+                        color: #333;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        line-height: 140%;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .gift-card__option-3 {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .gift-card__terms {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 23.75rem;
+
+            .gift-card__terms-text {
+                width: 23.75rem;
+                color: #333;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 140%;
+                margin-top: 21.8125rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .gift-card__btn {
+                display: flex;
+                width: 21.375rem;
+                height: 3rem;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0.625rem;
+                background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+                transition: all 0.3s ease-in-out;
+        
+                &:hover {
+                    cursor: pointer;
+                    background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+                }
+        
+                &:active {
+                    transform: scale(0.88);
+                }
+        
+                .gift-card__btn-link {
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: 0.2rem;
+                    text-transform: uppercase;
+                    transition: all 0.3s ease-in-out;
+                }
+                
+                &:active .gift-card__btn-link {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+
+
+}

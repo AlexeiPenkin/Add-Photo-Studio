@@ -1,0 +1,145 @@
+.feedback-form {
+    width: 100%;
+    height: 54.1rem;
+
+    .feedback-form__wrap {
+        display: flex;
+        align-items: center;
+        width: 75rem;
+        height: 37.125rem;
+        margin: 0 auto 9.375rem;
+
+        .section-map {
+            width: 53rem; /* 848px */
+            height: 33.8125rem; /* 541px */
+            margin: 30px 0 2.5rem; /* 40px 1.625rem */
+
+            .map {
+                border-radius: 1.625rem 0px 0px 1.625rem; /* 26px */
+                border: 5px solid #F2F4F4;
+                box-shadow: 0px 2.69px 6.65px 0px rgba(121, 121, 121, 0.20);
+                filter: saturate(2);
+            }
+        }
+
+        .form-box {
+            width: 34.44rem; /* 551px */
+            height: 37.125rem; /* 594px */
+            border-radius: 1.5625rem; /* 25px */
+            background: #F2F4F4;
+            margin-left: -12.44rem; /* -199px */
+            z-index: 100;
+            box-shadow: 0px 2.69px 6.65px 0px rgba(121, 121, 121, 0.20);
+
+            .form-box__wrap {
+                display: flex;
+                flex-direction: column;
+                width: 29.94rem; /* 479px */
+                height: 27rem; /* 432px */
+                margin: 5.1rem 2.25rem; /* 81px 36px */
+
+                h2 {
+                    color: #4A4A4A;
+                    font-size: 1.875rem; /* 30px */
+                    font-weight: 600;
+                    line-height: 120%;
+                    text-align: center;
+                    margin: 0 auto 2rem; /* 32px */
+                }
+    
+                fieldset {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    width: 420px;
+                    min-height: 236px;
+                    margin: 0 auto 32px;
+
+                    .input-form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        span {
+                            color: rgba(18, 22, 33, 0.4);
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 75%;
+                        }
+        
+                        input {
+                            width: 420px;
+                            height: 48px;
+                            padding: 9px 0 13px 16px;
+                            background-color: #fff;
+                            border: 1px solid #DDDEE4;
+                            border-radius: 5px;
+                            font-size: 16px;
+                            font-weight: 500;
+        
+                            &::placeholder {
+                                color: rgba(177, 177, 177, 0.4);
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                                line-height: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .feedback-form__btn {
+                    display: flex;
+                    width: 420px; /* 26.25rem */
+                    height: 48px; /* 4.75rem */
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 0.625rem; /* 10px */
+                    background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+                    margin: 0 auto 1rem; /* 16px */
+                    transition: all 0.3s ease-in-out;
+            
+                    &:hover {
+                        cursor: pointer;
+                        background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+                    }
+            
+                    &:active {
+                        transform: scale(0.88);
+                    }
+            
+                    .feedback-form__btn-link {
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: 0.2rem;
+                        text-transform: uppercase;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    
+                    &:active .feedback-form__btn-link {
+                        font-size: 0.875rem;
+                    }
+                }
+
+                .feedback-form__disclaimer {
+                    color: #585858;
+                    text-align: center;
+                    font-size: 0.75rem /* 12px */;
+                    font-weight: 500;
+                    line-height: 133.333%;
+
+                    .disclaimer__span {
+                        color: #333;
+                        font-size: 0.75rem; /* 12px */;
+                        font-weight: 500;
+                        line-height: 1rem;  /* 16px */;
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+        }
+
+    }
+}

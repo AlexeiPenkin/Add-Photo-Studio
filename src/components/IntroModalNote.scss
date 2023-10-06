@@ -1,0 +1,77 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+
+    .modal {
+        position: relative;
+        width: 38.875rem; /* 622px */
+        height: 20.6875rem; /* 331px */
+        transition: width 1s, height 350ms ease;
+        border-radius: 0.9375rem; /* 15px */
+        background-image: url('../../public/img/intro-modal-note-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .modal-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem; /* 24px */
+            margin: 5.5rem auto; /* 88px */
+            
+            .closeModal {
+                position: absolute;
+                top: -2rem;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 1.3125rem; /* 21px */
+                height: 1.3125rem; /* 21px */
+                font-size: 1.5625rem; /* 25px */
+                color: #fff;
+                padding-bottom: 0.1875rem; /* 3px */
+                cursor: pointer;
+                z-index: 10;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    color: rgba(255, 255, 255, 0.7);
+                }
+
+                &:active {
+                    color: #E97522;
+                }
+            }
+
+            .modal-note__form-wrap {
+                
+                h2 {
+                    color: #4A4A4A;
+                    text-align: center;
+                    font-size: 2.25rem; /* 36px */
+                    font-weight: 600;
+                    line-height: 120%;
+                }
+
+                p {
+                    color: #121621;
+                    text-align: center;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    line-height: 137.5%;
+                }
+            }
+        }
+
+    }
+}

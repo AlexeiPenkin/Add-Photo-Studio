@@ -1,0 +1,90 @@
+.workflow {
+    display: flex;
+    flex-direction: column;
+    height: 1212px;
+    background-image: url('../../public/img/workflow-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .workflow__heading {
+        color: #333;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        margin: 80px auto 97px;
+    }
+
+    .scheme {
+        position: relative;
+        display: flex;
+
+        .scheme__wrapper {
+            margin: 0 auto 168px;
+
+            .stage {
+                position: relative;
+                width: 348px;
+                height: 190px;
+                border-radius: 12px;
+                border: 2px solid var(--Accent-color, #E97522);
+                background: #FFF;
+                box-shadow: 0px 11px 15px 0px rgba(221, 221, 221, 0.20), 0px 9px 46px 0px rgba(216, 216, 216, 0.12), 0px 24px 38px 0px rgba(220, 220, 220, 0.14);
+                padding: 40px;
+    
+                .stage__number {
+                    position: absolute;
+                    left: -25px;
+                    bottom: -25px;
+                    width: 50px;
+                    height: 50px;
+                }
+    
+                .stage__heading {
+                    color: #333;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 120%;
+                    margin-bottom: 12px;
+                }
+    
+                p {
+                    color: #4A4A4A;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 140%;
+                }
+            }
+
+            .stage-1 {
+                position: absolute;
+                top: 0;
+                left: 112px;
+            }
+
+            .stage-2 {
+                position: absolute;
+                top: 57px;
+                right: 359px;
+            }
+
+            .stage-3 {
+                position: absolute;
+                top: 359px;
+                right: 108px;
+            }
+
+            .stage-4 {
+                position: absolute;
+                top: 354px;
+                left: 274px;
+            }
+
+            .stage-5 {
+                position: absolute;
+                top: 636px;
+                left: 638px;
+            }
+        }
+    }
+}

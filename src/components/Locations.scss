@@ -1,0 +1,88 @@
+.locations { 
+    position: relative;
+    height: 45rem;
+    background-image: url('../../public/img/locations-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 3.75rem;
+
+    h2 {
+        width: 100%;
+        color: #333;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 120%;
+        margin: 120px auto 80px;
+    }
+
+    .swiper {
+        width: 77.5rem;
+        height: 21.8rem;
+        margin: 0 5.6rem 3.75rem;
+
+        .swiper-wrapper {
+            display: flex;
+
+            .swiper-slide {
+                width: 25rem;
+                height: 21.8rem;
+
+                img {
+                    position: relative;
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+
+    .swiper-button {
+        position: absolute;
+        top: 42%;
+        right: 2%;
+        width: 9.75rem;
+        filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));
+    }
+
+    .swiper-button::after {
+        content: none;
+    }
+
+    .locations__btn {
+        display: flex;
+        width: 31.88rem;
+        height: 3rem;
+        padding: 2.25rem 4.6rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+        margin: 3.5rem auto 3.75rem;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+        }
+
+        &:active {
+            transform: scale(0.88);
+        }
+
+        .locations__btn-link {
+            color: #FFF;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        &:active .locations__btn-link {
+            font-size: 0.875rem;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 461px;
+    background-color: #F2F4F4;
+
+    .description__heading {
+        width: 100%;
+        color: #333;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 120%;
+        text-align: center;
+        margin: 60px auto 32px;
+    }
+
+    .description__text-wrapper {
+        margin: 0 100px 66px;
+
+        p {
+            color: #4A4A4A;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 162.5%;
+        }
+
+        details,
+        summary {
+            display: inline;
+            color: #4A4A4A;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 162.5%;
+        }
+
+        details[open] {
+            display: contents;
+        }
+
+        details[open]::after {  /* пространство для записи "СВЕРНУТЬ" */
+            display: block;  
+            content: "\00a0";
+        }
+
+        summary {
+            cursor: pointer;
+        }
+
+        details[open] summary {
+            position: absolute;  /* переместить запись "СВЕРНУТЬ" вниз <div> */
+            bottom: 0;
+            left: 0;
+        }
+
+        summary::before {
+            content: "Подробнее >>";
+            position: absolute;
+            left: 1190px;
+            bottom: 82px;
+            width: 135px;
+            color: #E97522;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 150%;
+        }
+        details[open] summary::before {
+            content: "Скрыть <<";
+            bottom: 50px;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+    }
+}

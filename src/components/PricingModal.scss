@@ -1,0 +1,109 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+
+    .pricing-modal {
+        position: relative;
+        width: 42.5rem; /* 680px */
+        height: 19.25rem; /* 308px */
+        transition: width 1s, height 350ms ease;
+        border-radius: 0.9375rem; /* 15px */
+        background-color: #fff;
+
+        .pricing-modal__content {
+            display: flex;
+            flex-direction: column;
+            padding: 2.625rem 3rem; /* 42px 48px */
+
+            h2 {
+                color: #333;
+                text-align: center;
+                font-size: 2.25rem; /* 36px */
+                font-weight: 600;
+                line-height: 120%;
+                margin-bottom: 2rem; /* 32px */
+            }
+
+            .pricing-modal__form {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem; /* 32px */
+                margin: 0 auto 2rem; /* 32px */
+
+                .input-form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    span {
+                        color: #121621;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 75%;
+                    }
+
+                    input {
+                        width: 420px;
+                        height: 48px;
+                        padding: 9px 0 13px 16px;
+                        background-color: #fff;
+                        border: 1px solid #DDDEE4;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        font-weight: 500;
+    
+                        &::placeholder {
+                            color: rgba(177, 177, 177, 0.4);
+                            font-size: 0.75rem;
+                            font-weight: 500;
+                            line-height: 100%;
+                        }
+                    }
+                }
+
+                .pricing-modal__btn {
+                    display: flex;
+                    height: 48px; /* 4.75rem */
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 0.625rem; /* 10px */
+                    background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+                    transition: all 0.3s ease-in-out;
+            
+                    &:hover {
+                        cursor: pointer;
+                        background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+                    }
+            
+                    &:active {
+                        transform: scale(0.88);
+                    }
+            
+                    .pricing-modal__btn-link {
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: 0.1875rem;
+                        text-transform: uppercase;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    
+                    &:active .pricing-modal__btn-link {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+    }
+}

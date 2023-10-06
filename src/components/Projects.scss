@@ -1,0 +1,18 @@
+$text-color-1: #333;
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 112px;
+
+    .projects__heading {
+        width: 100%;
+        color: $text-color-1;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 120%;
+        margin: 120px auto 80px;
+    }
+}

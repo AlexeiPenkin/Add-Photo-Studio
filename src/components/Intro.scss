@@ -1,0 +1,78 @@
+.intro {
+    display: flex;
+    width: 100%;
+    min-height: 860px;
+    background-image: url('../../public/img/intro-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .intro__wrap {
+        display: flex;
+        flex-direction: column;
+        margin: 145px 505px 145px 100px;
+
+        .intro__title {
+            color: #F5F5F5;
+            font-size: 66px;
+            font-weight: 700;
+            line-height: 118.182%;
+            letter-spacing: 3.2px;
+            margin-bottom: 52px;
+        }
+
+        .intro__subtitle {
+            width: 733px;
+            color: #F5F5F5;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 120%;
+            margin-bottom: 24px;
+        }
+
+        .intro__text {
+            width: 791px;
+            color: #F5F5F5;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 162.5%;
+            margin-bottom: 32px;
+        }
+
+        .intro__btn {
+            display: flex;
+            width: 510px;
+            height: 64px;
+            padding: 36px 74px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+            }
+
+            &:active {
+                transform: scale(0.88);
+            }
+
+            .intro__btn-link {
+                color: #FFF;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                transition: all 0.3s ease-in-out;
+            }
+            
+            &:active .intro__btn-link {
+                font-size: 14px;
+            }
+        }
+    }
+}

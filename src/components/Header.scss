@@ -1,0 +1,96 @@
+$text-color: #4A4A4A;
+$text-color-hover: #7f7f7f;
+$accent-color: #E97522;
+$gradient-btn: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+$gradient-btn-hover: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+
+.header {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 142.857%;
+     
+    .header__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 75px;
+        width: 100%;
+        padding: 22px 92px;
+
+        .header__logo {
+            width: 108px;
+            height: 35px;
+        }
+
+        .header__nav {
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 32px;
+
+                a {
+                    color: $text-color;
+                    padding: 8px 0;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $text-color-hover;
+                    }
+
+                    &:active {
+                        color: $accent-color;
+                    }
+                }
+            }
+        }
+
+        .header__feedback {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+
+            .header__feedback-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 248px;
+                padding: 8px 24px;
+                border-radius: 10px;
+                border: 2px solid $accent-color;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    cursor: pointer;
+                    border: none;
+                    background-color: $accent-color;
+                }
+
+                &:hover .feedback-btn-link {
+                    color: #fff;
+                }
+
+                &:active {
+                    transform: scale(.88);
+                }
+
+                .feedback-btn-link {
+                    color: $accent-color;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .header__phone-number {
+                font-weight: 600;
+                padding: 8px 0;
+            }
+        }
+    }
+}
